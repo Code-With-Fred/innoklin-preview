@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INNO'KLIN Cleaning Company | Cleaning and Fumigation in Lekki, Lagos</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="INNO'KLIN Cleaning Company in Lekki Phase II. General cleaning, fumigation and pest control, floor maintenance and waste management for homes and offices across Lagos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#0b7a5a;
+    --brand-dark:#075a42;
+    --brand-light:#e7f5ef;
+    --accent:#f4b63f;
+    --ink:#10201a;
+    --muted:#5a6b64;
+    --line:#dfe9e4;
+    --bg:#ffffff;
+    --soft:#f6faf8;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  /* preview ribbon */
+  .ribbon{background:var(--ink);color:#cfe3da;font-size:13px;text-align:center;padding:8px 16px}
+  .ribbon b{color:#fff}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.3px}
+  .logo-mark{width:38px;height:38px;border-radius:11px;background:var(--brand);display:grid;place-items:center;color:#fff}
+  .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.4px;margin-top:-4px}
+  .nav-links{display:flex;gap:28px;font-weight:600;font-size:15px;color:var(--muted)}
+  .nav-links a:hover{color:var(--brand)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:15px;padding:13px 22px;border-radius:999px;border:0;cursor:pointer;transition:transform .15s,background .15s}
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--brand);color:#fff}
+  .btn-primary:hover{background:var(--brand-dark)}
+  .btn-ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+  .btn-wa{background:#25d366;color:#08331b}
+  .nav .btn{padding:10px 18px;font-size:14px}
+
+  /* hero */
+  .hero{background:radial-gradient(1200px 500px at 85% -10%,#d6efe4 0%,transparent 60%),linear-gradient(180deg,#f3faf6 0%,#fff 100%);padding:64px 0 56px}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--brand-dark);font-weight:700;font-size:13px;padding:7px 14px;border-radius:999px;margin-bottom:20px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--brand)}
+  h1{font-size:clamp(34px,5.2vw,56px);line-height:1.08;letter-spacing:-1.2px;font-weight:800}
+  h1 span{color:var(--brand)}
+  .lead{font-size:18px;color:var(--muted);margin:20px 0 30px;max-width:540px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;color:var(--muted);font-size:14px;font-weight:600}
+  .trust div{display:flex;align-items:center;gap:8px}
+  .trust svg{color:var(--brand)}
+
+  .hero-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 20px 50px -20px rgba(11,122,90,.25)}
+  .hero-card h3{font-size:18px;margin-bottom:4px}
+  .hero-card p{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .mini-list{display:grid;gap:10px}
+  .mini{display:flex;align-items:center;gap:14px;padding:14px;border-radius:14px;background:var(--soft);font-weight:600;font-size:15px}
+  .mini i{width:40px;height:40px;border-radius:12px;background:var(--brand-light);display:grid;place-items:center;color:var(--brand);flex-shrink:0}
+  .hero-card .btn{width:100%;margin-top:18px}
+
+  /* sections */
+  section{padding:80px 0}
+  .eyebrow{color:var(--brand);font-weight:800;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:10px}
+  h2{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.8px;font-weight:800}
+  .sub{color:var(--muted);font-size:17px;margin-top:12px;max-width:620px}
+  .head{margin-bottom:44px}
+
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .svc{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:#fff;transition:border-color .2s,box-shadow .2s,transform .2s}
+  .svc:hover{border-color:#b9ddcd;box-shadow:0 14px 34px -18px rgba(11,122,90,.35);transform:translateY(-2px)}
+  .svc .ico{width:52px;height:52px;border-radius:14px;background:var(--brand-light);color:var(--brand);display:grid;place-items:center;margin-bottom:18px}
+  .svc h3{font-size:19px;margin-bottom:8px}
+  .svc p{color:var(--muted);font-size:15px}
+  .svc ul{list-style:none;margin-top:14px;display:grid;gap:6px}
+  .svc li{font-size:14px;font-weight:600;display:flex;gap:8px;align-items:center}
+  .svc li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
+  .who{background:var(--soft)}
+  .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .who-card{background:#fff;border-radius:20px;padding:34px;border:1px solid var(--line)}
+  .who-card h3{font-size:22px;margin:14px 0 10px}
+  .who-card p{color:var(--muted)}
+  .pill{display:inline-block;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:var(--brand-light);color:var(--brand-dark)}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+  .step{padding:28px;border-radius:var(--radius);border:1px dashed #c6dfd3;position:relative}
+  .step::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:grid;place-items:center;margin-bottom:16px}
+  .step h3{font-size:18px;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:15px}
+
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .ph{aspect-ratio:4/3;border-radius:var(--radius);background:repeating-linear-gradient(45deg,#f1f7f4,#f1f7f4 12px,#e9f3ee 12px,#e9f3ee 24px);border:1.5px dashed #b9d9ca;display:grid;place-items:center;text-align:center;color:var(--muted);font-weight:600;font-size:14px;padding:16px}
+  .ph svg{display:block;margin:0 auto 8px;color:var(--brand)}
+
+  /* quote */
+  .quote{background:linear-gradient(135deg,var(--brand) 0%,#0a5f47 100%);color:#fff;border-radius:28px;padding:48px;display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+  .quote h2{color:#fff}
+  .quote .sub{color:#cdeadf}
+  .quote ul{list-style:none;margin-top:26px;display:grid;gap:12px}
+  .quote li{display:flex;gap:10px;align-items:center;font-weight:600}
+  form{background:#fff;color:var(--ink);border-radius:20px;padding:26px;display:grid;gap:14px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  label{font-size:13px;font-weight:700;display:block;margin-bottom:6px}
+  input,select,textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-light)}
+  textarea{resize:vertical;min-height:84px}
+  form .btn{width:100%;padding:15px}
+  .note{font-size:12px;color:var(--muted);text-align:center}
+
+  /* footer */
+  footer{background:var(--ink);color:#b9cdc5;padding:56px 0 28px;margin-top:80px}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  footer .logo{color:#fff}
+  footer h4{color:#fff;font-size:15px;margin-bottom:14px}
+  footer p,footer a{font-size:14px}
+  footer ul{list-style:none;display:grid;gap:8px}
+  .copy{border-top:1px solid #23362e;margin-top:40px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  /* floating whatsapp */
+  .fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.2);z-index:30}
+
+  @media (max-width:900px){
+    .nav-links{display:none}
+    .hero{padding:40px 0}
+    .hero-grid,.quote,.who-grid{grid-template-columns:1fr}
+    .services,.steps{grid-template-columns:1fr 1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .foot{grid-template-columns:1fr 1fr}
+    .quote{padding:32px 22px}
+  }
+  @media (max-width:600px){
+    section{padding:60px 0}
+    .services,.steps,.gallery,.foot,.row{grid-template-columns:1fr}
+    .nav .btn span{display:none}
+    .lead{font-size:16px}
+    .cta-row .btn{flex:1}
+    .quote{border-radius:20px}
+    form{padding:20px}
+  }
+</style>
+</head>
+<body>
+
+<div class="ribbon"><b>Website preview</b> designed for INNO'KLIN Cleaning Company by CodeWithFred</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">
+      <span class="logo-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+      </span>
+      <span>INNO'KLIN<small>CLEANING COMPANY</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#who">Homes and Offices</a>
+      <a href="#how">How it works</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a href="#quote" class="btn btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>Free quote</span></a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tag"><span class="dot"></span> Lekki Phase II, Lagos</div>
+      <h1>Spotless homes and offices, <span>without the stress.</span></h1>
+      <p class="lead">INNO'KLIN handles your cleaning, fumigation, floor care and waste management, so you can focus on your family and your business.</p>
+      <div class="cta-row">
+        <a href="#quote" class="btn btn-primary">Get a free quote</a>
+        <a href="https://wa.me/2348030418594?text=Hello%20INNO'KLIN%2C%20I%20would%20like%20to%20book%20a%20cleaning." class="btn btn-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6a11.9 11.9 0 0 0 5.7 1.5c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.5zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 0 1-1.5-5.3C2.2 6.5 6.6 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.4 9.8-9.9 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7.6-.1 1.8-.7 2-1.4s.3-1.3.2-1.4-.3-.2-.6-.3z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="trust">
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Homes and offices</div>
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>One off or regular contracts</div>
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Quick quotes on WhatsApp</div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>What do you need cleaned?</h3>
+      <p>Pick a service and get a quote in minutes.</p>
+      <div class="mini-list">
+        <div class="mini"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></i>Home cleaning</div>
+        <div class="mini"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></i>Office and commercial cleaning</div>
+        <div class="mini"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h6M16 12h6M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></i>Fumigation and pest control</div>
+      </div>
+      <a href="#quote" class="btn btn-primary">Request a quote</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Our services</div>
+      <h2>Everything your space needs to stay clean and safe</h2>
+      <p class="sub">From a one time deep clean to a regular contract for your office or estate, INNO'KLIN has you covered.</p>
+    </div>
+    <div class="services">
+      <div class="svc">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/></svg></div>
+        <h3>General cleaning</h3>
+        <p>Thorough cleaning for homes, apartments and offices, done to a high standard every time.</p>
+        <ul><li>Deep cleaning</li><li>Move in and move out</li><li>Regular scheduled cleaning</li></ul>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h6M16 12h6"/></svg></div>
+        <h3>Fumigation and pest control</h3>
+        <p>Get rid of cockroaches, rodents, mosquitoes and other pests, and keep them away.</p>
+        <ul><li>Homes and estates</li><li>Offices and warehouses</li><li>Restaurants and shops</li></ul>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h3>Floor maintenance</h3>
+        <p>Restore and protect your floors so they look new for longer.</p>
+        <ul><li>Scrubbing and polishing</li><li>Tiles, marble and terrazzo</li><li>Carpet and rug cleaning</li></ul>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg></div>
+        <h3>Waste management</h3>
+        <p>Safe and reliable waste removal for homes, offices and sites.</p>
+        <ul><li>Scheduled waste pickup</li><li>After party and event clean up</li><li>Site clearing</li></ul>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Commercial cleaning</h3>
+        <p>Keep your office, shop or facility clean so your staff and customers notice.</p>
+        <ul><li>Daily or weekly contracts</li><li>Restrooms and kitchens</li><li>Common areas</li></ul>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V10l8-6 8 6v10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>Post construction cleaning</h3>
+        <p>Dust, paint and debris removed so your new or renovated space is ready to use.</p>
+        <ul><li>New buildings</li><li>Renovations</li><li>Handover cleaning</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="who" id="who">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Who we work with</div>
+      <h2>Residential and commercial clients</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-card">
+        <span class="pill">Homes</span>
+        <h3>For families and homeowners</h3>
+        <p>Deep cleans, fumigation and regular house cleaning across Lekki and Lagos. Book once or set up a weekly or monthly plan.</p>
+      </div>
+      <div class="who-card">
+        <span class="pill">Businesses</span>
+        <h3>For offices, estates and facilities</h3>
+        <p>Reliable cleaning and maintenance contracts for offices, estates, shops and restaurants, with a dedicated team that shows up on schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">How it works</div>
+      <h2>Clean in three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Request a quote</h3><p>Tell us what you need using the form below or on WhatsApp.</p></div>
+      <div class="step"><h3>Get your price</h3><p>We confirm the details and send you a clear quote, with no hidden charges.</p></div>
+      <div class="step"><h3>We clean</h3><p>Our team arrives on the agreed date and leaves your space spotless.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Our work</div>
+      <h2>Before and after</h2>
+      <p class="sub">Real photos of INNO'KLIN jobs will go here.</p>
+    </div>
+    <div class="gallery">
+      <div class="ph"><div><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>Your photo here</div></div>
+      <div class="ph"><div><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>Your photo here</div></div>
+      <div class="ph"><div><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>Your photo here</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote" style="padding-top:0">
+  <div class="wrap">
+    <div class="quote">
+      <div>
+        <div class="eyebrow" style="color:var(--accent)">Free quote</div>
+        <h2>Tell us what you need</h2>
+        <p class="sub">Fill this in and your request goes straight to our WhatsApp. We reply fast.</p>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>No obligation</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Clear pricing</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Homes and offices across Lagos</li>
+        </ul>
+      </div>
+      <form id="quoteForm">
+        <div class="row">
+          <div><label for="name">Your name</label><input id="name" required placeholder="e.g. Tunde Bello"></div>
+          <div><label for="phone">Phone number</label><input id="phone" type="tel" required placeholder="080..."></div>
+        </div>
+        <div class="row">
+          <div><label for="service">Service</label>
+            <select id="service" required>
+              <option value="">Choose a service</option>
+              <option>General cleaning</option>
+              <option>Fumigation and pest control</option>
+              <option>Floor maintenance</option>
+              <option>Waste management</option>
+              <option>Commercial cleaning</option>
+              <option>Post construction cleaning</option>
+            </select>
+          </div>
+          <div><label for="ptype">Property type</label>
+            <select id="ptype">
+              <option>Home or apartment</option>
+              <option>Office</option>
+              <option>Estate</option>
+              <option>Shop or restaurant</option>
+              <option>Warehouse or facility</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div><label for="area">Location</label><input id="area" required placeholder="e.g. Lekki Phase 1"></div>
+          <div><label for="date">Preferred date</label><input id="date" type="date"></div>
+        </div>
+        <div><label for="notes">Anything else? (optional)</label><textarea id="notes" placeholder="Number of rooms, size of space, how often you need it..."></textarea></div>
+        <button class="btn btn-primary" type="submit">Send request on WhatsApp</button>
+        <p class="note">Opens WhatsApp with your details filled in.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#" class="logo"><span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/></svg></span><span>INNO'KLIN<small style="color:#8fa89e">CLEANING COMPANY</small></span></a>
+        <p style="margin-top:14px;max-width:320px">Cleaning, fumigation, floor maintenance and waste management for homes and businesses in Lagos.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+2348030418594">0803 041 8594</a></li>
+          <li><a href="tel:+2348180306445">0818 030 6445</a></li>
+          <li><a href="mailto:innoklin@gmail.com">innoklin@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Lekki Phase II<br>Lekki, Lagos</p>
+      </div>
+    </div>
+    <div class="copy"><span>© 2026 INNO'KLIN Cleaning Company</span><span>Website by CodeWithFred</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/2348030418594?text=Hello%20INNO'KLIN%2C%20I%20would%20like%20to%20book%20a%20cleaning." aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6a11.9 11.9 0 0 0 5.7 1.5c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.5zm-3.1 11c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7.6-.1 1.8-.7 2-1.4s.3-1.3.2-1.4-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+  document.getElementById('quoteForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = function(id){ return document.getElementById(id).value.trim(); };
+    var msg = "Hello INNO'KLIN, I would like a quote.\n\n" +
+      "Name: " + v('name') + "\n" +
+      "Phone: " + v('phone') + "\n" +
+      "Service: " + v('service') + "\n" +
+      "Property: " + v('ptype') + "\n" +
+      "Location: " + v('area') + "\n" +
+      (v('date') ? "Preferred date: " + v('date') + "\n" : "") +
+      (v('notes') ? "Details: " + v('notes') : "");
+    window.open('https://wa.me/2348030418594?text=' + encodeURIComponent(msg), '_blank');
+  });
+</script>
+</body>
+</html>
